@@ -1,0 +1,35 @@
+.projects{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+;
+    &__title{
+        transform: translate(0,-2px);
+        text-align: center;
+        transition: .5s all linear;
+        padding: 1rem;
+    }
+    & div{
+        // flex: auto;
+        width: 20rem;
+        margin: 1.5vw;
+
+        & img{
+            width: 100%;
+            height: 25rem;
+            transition: .5s all linear;
+
+            &:hover{
+                opacity: .8;
+            }
+
+            &:hover + .projects__title{
+                background-color:$black;
+                color: $white;
+            }
+        }
+    }
+}

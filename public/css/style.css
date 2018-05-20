@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+* {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.9);
+  list-style: none; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem 3rem;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif; }
+
+.header {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .header__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left; }
+  .header__links {
+    font-size: 1rem;
+    display: flex; }
+    .header__links li {
+      padding: 0 1rem 0 1rem; }
+
+.intro {
+  display: flex;
+  width: 100%;
+  height: 72vh;
+  margin-top: 2rem; }
+  .intro__img {
+    align-items: center;
+    background-image: url("../image/info.jpg");
+    background-size: 100% 100%;
+    margin: 2rem 0;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 80%;
+    flex: 2.5;
+    filter: grayscale(100%);
+    transition: .3s all linear;
+    -webkit-box-shadow: -2px 3px 34px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 3px 34px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 3px 34px 3px rgba(0, 0, 0, 0.75); }
+    .intro__img:hover {
+      filter: grayscale(20%);
+      -webkit-box-shadow: -2px 3px 34px -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -2px 3px 34px -1px rgba(0, 0, 0, 0.75);
+      box-shadow: -2px 3px 34px -1px rgba(0, 0, 0, 0.75); }
+    .intro__img--header {
+      color: rgba(255, 255, 255, 0.9);
+      transform: translate(40%, 250%); }
+  .intro__info {
+    margin: 2rem 0;
+    flex: 1;
+    margin: 2rem;
+    font-size: 1rem; }
+    .intro__info--header {
+      font-size: 1.4rem; }
+
+.projects {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .projects__title {
+    transform: translate(0, -2px);
+    text-align: center;
+    transition: .5s all linear;
+    padding: 1rem; }
+  .projects div {
+    width: 20rem;
+    margin: 1.5vw; }
+    .projects div img {
+      width: 100%;
+      height: 25rem;
+      transition: .5s all linear; }
+      .projects div img:hover {
+        opacity: .8; }
+      .projects div img:hover + .projects__title {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: rgba(255, 255, 255, 0.9); }
+
+.about--title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0; }
+
+.about {
+  display: flex;
+  height: 50vh;
+  width: 100%; }
+  .about__img img {
+    width: 35vw;
+    height: 100%;
+    flex: auto; }
+  .about__about {
+    padding: 1rem;
+    font-size: 1rem;
+    flex: auto; }
+
+.footer {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1rem; }
+  .footer a {
+    padding: .5rem; }
