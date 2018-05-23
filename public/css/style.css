@@ -73,16 +73,16 @@ body {
     transition: .5s all linear;
     padding: 1rem; }
   .projects div {
+    background-color: #8d1111;
     width: 20rem;
-    margin: 1.5vw; }
+    margin: 1.5vw;
+    overflow: hidden; }
     .projects div img {
       width: 100%;
       height: 25rem;
       transition: .5s all linear; }
-      .projects div img:hover {
-        opacity: .8; }
       .projects div img:hover + .projects__title {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.719);
         color: rgba(255, 255, 255, 0.9); }
 
 .about--title {

@@ -13,21 +13,25 @@
         padding: 1rem;
     }
     & div{
-        // flex: auto;
+        background-color: rgb(141, 17, 17);
         width: 20rem;
         margin: 1.5vw;
+        overflow: hidden;
 
         & img{
             width: 100%;
             height: 25rem;
             transition: .5s all linear;
 
+            // image hover
             &:hover{
-                opacity: .8;
+                // opacity: .8;
+                // transform: scale(1.1);
             }
 
+            // project image title hover effect
             &:hover + .projects__title{
-                background-color:$black;
+                background-color:rgba(0, 0, 0, 0.719);
                 color: $white;
             }
         }
