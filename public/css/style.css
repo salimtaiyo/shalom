@@ -123,13 +123,24 @@ body {
     transition: .5s all linear; }
   .projects__sub {
     padding: 1rem; }
+    .projects__sub--details {
+      margin-top: 15px;
+      padding: .3rem;
+      text-align: left; }
+  .projects__info {
+    margin-top: 2rem; }
+  .projects__title {
+    font-size: 1.3rem;
+    transition: .3s all linear; }
+    .projects__title a {
+      text-decoration: none; }
 
 .flex {
   width: 20rem;
   margin: 1.5vw;
   overflow: hidden;
   border-radius: 7%;
-  height: 20rem;
+  height: 25rem;
   box-shadow: 10px 16px 43px -11px rgba(0, 0, 0, 0.75);
   transform: translate(0, -1%);
   transition: .1s all linear;
@@ -137,6 +148,8 @@ body {
   .flex:hover {
     transform: translate(0, 0);
     box-shadow: 10px 16px 43px -19px rgba(0, 0, 0, 0.75); }
+  .flex:hover .projects__title a {
+    color: rgba(223, 25, 25, 0.911); }
 
 .about--title {
   text-align: center;
@@ -151,11 +164,12 @@ body {
     width: 35vw;
     height: 100%;
     flex: 1;
-    font-size: 3rem; }
+    font-size: 2.4rem;
+    transform: translate(20%, 40%); }
   .about__about {
     overflow: scroll;
     padding: 3rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     flex: 2; }
 
 .footer {
@@ -239,3 +253,23 @@ body {
   background-position: 100% 100%;
   background-size: contain;
   animation: fadeImg3 24s infinite; }
+
+.sidebar {
+  height: 10rem;
+  padding: 1rem;
+  width: 3rem;
+  position: fixed;
+  top: 40%;
+  left: 0; }
+  .sidebar__git, .sidebar__linkedin, .sidebar__mail {
+    width: 2rem;
+    height: 3rem; }
+
+.scroll {
+  width: 70px;
+  right: 0;
+  bottom: -200%;
+  padding: 2rem;
+  position: absolute; }
+  .scroll:hover {
+    cursor: pointer; }

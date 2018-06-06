@@ -10,3 +10,15 @@ var typed = new Typed(".element", {
     loop: true
 
   });
+
+ document.querySelector('.home__nav--links').addEventListener('click', function(event){
+     if(event.target.className==='x'){
+         console.log('hello');
+        window.scroll({ top: 760, left: 0, behavior: 'smooth' });
+     }
+     else{
+        window.scroll({ top: 2500, left: 0, behavior: 'smooth' });
+     }
+ })
+
+ document.querySelector('.scroll').addEventListener('click', () => window.scroll({ top: 0, left: 0, behavior: 'smooth' }))
