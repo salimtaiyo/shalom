@@ -8,3 +8,13 @@
     -moz-box-shadow: -2px 3px 34px -1px rgba(0,0,0,0.75);
     box-shadow: -2px 3px 34px -1px rgba(0,0,0,0.75);
 }
+
+// box shadow for the project divs
+@mixin box-shadow-projects{
+    box-shadow: 10px 16px 43px -11px rgba(0,0,0,0.75);
+}
+
+// box shadow for the project div on hover
+@mixin box-shadow-projects-hover{
+    box-shadow: 10px 16px 43px -19px rgba(0,0,0,0.75);
+}

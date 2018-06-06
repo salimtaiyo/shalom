@@ -1,0 +1,117 @@
+
+// login container
+.home{
+    animation: change 30s infinite linear;
+    height: 100vh;
+    z-index: 100;
+    overflow: hidden;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    // container for the image  and text
+    &__content{
+        // transform: translate(0, -1rem);
+        display: flex;
+        height: 40rem;
+        overflow: hidden;
+    }
+    // links
+    &__nav{
+       
+        &--links{
+            display: flex;
+            padding: 1rem;
+            font-size: 1rem;
+            
+            & li{
+                padding: 0 1rem 0 1rem;
+
+                &:hover{
+                    color: rgba(136, 18, 18, 0.815) !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+// contents for the homepage
+.content{
+    // main home image
+    &--img{
+        transform: translate(0,-5rem);
+        width: 40vw;
+        position: relative;
+    }
+
+    // info homepage
+    &--info{
+  
+        transform: translate(0, 20rem);
+        text-align: left;
+        margin-left: 3rem;
+
+        &--header{
+            font-size: 1.5rem;
+        }
+
+        &--sub{
+            font-size: 1.2rem;
+            
+        }
+
+        &--button{
+            color: white;
+            border: transparent;
+            background-color: rgba(0, 0, 0, 0.842);
+            padding: 1rem;
+            font-size: 1rem;
+        }
+    }
+}
+// header 
+.logo--text{
+    font-size: 2.4rem;
+    font-family: 'Satisfy', cursive;
+}
+.img--1, .img--2, .img--3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.img--1{
+    background-image: url('https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/9398/assets/blocks/content/home-summer-2017/hero/music-overlay-1-1000w.png?2');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    animation:fadeImg 24s infinite;
+    
+    
+}
+
+.img--2{
+    background-image: url('https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/9398/assets/blocks/content/home-summer-2017/hero/real-estate-overlay-1-2500w.png?2');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    animation:fadeImg2 24s infinite;
+    
+}
+
+.img--3{
+    background-image: url('https://static1.squarespace.com/static/ta/5134cbefe4b0c6fb04df8065/9398/assets/blocks/content/home-summer-2017/hero/wellness-overlay-1-2500w.png?2');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    animation:fadeImg3 24s infinite;
+    
+}

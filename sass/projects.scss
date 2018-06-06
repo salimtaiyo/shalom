@@ -5,35 +5,39 @@
     flex-flow: row wrap;
     justify-content: center;
     
-;
-    &__title{
-        transform: translate(0,-2px);
-        text-align: center;
-        transition: .5s all linear;
-        padding: 1rem;
-    }
-    & div{
-        background-color: rgb(141, 17, 17);
-        width: 20rem;
-        margin: 1.5vw;
-        overflow: hidden;
-
         & img{
             width: 100%;
-            height: 25rem;
+            height: 13rem;
             transition: .5s all linear;
-
-            // image hover
-            &:hover{
-                // opacity: .8;
-                // transform: scale(1.1);
-            }
-
-            // project image title hover effect
-            &:hover + .projects__title{
-                background-color:rgba(0, 0, 0, 0.719);
-                color: $white;
-            }
         }
+    
+
+    // projects title div
+    &__sub{
+        // background-color: rgb(187, 187, 187);
+        padding: 1rem;
+
+        // title for the project
+        &--title{
+            
+        }
+    }
+}
+
+// the div that contains all the project images and details
+.flex{
+    width: 20rem;
+    margin: 1.5vw;
+    overflow: hidden;
+    border-radius: 7%;
+    height: 20rem;
+    @include box-shadow-projects;
+    transform: translate(0,-1%);
+    transition: .1s all linear;
+    text-align: center;
+
+    &:hover{
+        transform: translate(0,0);
+        @include box-shadow-projects-hover;
     }
 }
