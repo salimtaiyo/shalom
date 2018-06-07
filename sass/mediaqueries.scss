@@ -1,0 +1,44 @@
+
+
+@media only screen and (max-width: 800px){
+    // sliding images
+    .content{
+        &--img{
+            display: none;
+        }
+
+        &--info--header{
+            font-size: 4vw;
+        }
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+@media only screen and (max-width:600px){
+    // html css and typing.js part
+    .content{
+        &--info--header{
+            font-size: 6vw;
+            transform: translate(0, -5rem);
+        }
+    }
+    // logo 
+    .logo--text{
+        display: none;
+    }
+
+    // links
+    .home__nav--links{
+        transform: translate(-20%,0);
+    }
+
+
+    .footer{
+        margin-top: .5rem;
+    }
+}

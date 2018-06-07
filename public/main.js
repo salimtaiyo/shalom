@@ -13,11 +13,11 @@ var typed = new Typed(".element", {
 
  document.querySelector('.home__nav--links').addEventListener('click', function(event){
      if(event.target.className==='x'){
-         console.log('hello');
+    
         window.scroll({ top: 760, left: 0, behavior: 'smooth' });
      }
      else{
-        window.scroll({ top: 2500, left: 0, behavior: 'smooth' });
+        window.scroll({ top: 3500, left: 0, behavior: 'smooth' });
      }
  })
 
