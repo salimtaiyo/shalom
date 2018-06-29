@@ -3,7 +3,8 @@ var typed = new Typed(".element", {
         "",
         "JavaScript",
         "Foundation 6",
-        "Bootstrap"
+        "Bootstrap",
+        "Pug"
     ],
     typeSpeed: 90,
     backSpeed: 90,
